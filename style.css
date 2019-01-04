@@ -1,3 +1,15 @@
 body {
-  background-color:royalblue;
+  background-color:rgb(142, 244, 208);
+  font-family:Courier, Helvetica, Arial, Helvetica, sans-serif;
+  padding: 0 80px;
+}
+#title, #description {
+  text-align: center;
+}
+#description {
+  padding: 
+}
+form {
+  background-color:white;
+  padding: 30px 80px;
 }
