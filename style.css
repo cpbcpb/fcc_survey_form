@@ -1,15 +1,65 @@
 body {
-  background-color:rgb(142, 244, 208);
-  font-family:Courier, Helvetica, Arial, Helvetica, sans-serif;
+  background-color: rgb(142, 244, 208);
+  font-family: 'Courier New', Helvetica, Arial, Helvetica, sans-serif;
   padding: 0 80px;
 }
-#title, #description {
+
+#title,
+#description {
   text-align: center;
 }
-#description {
-  padding: 
-}
+
 form {
-  background-color:white;
+  background-color: white;
   padding: 30px 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select {
+  padding: 5px;
+  font-size: 13px;
+  font-family: 'Courier New', arial;
+  border-radius: 4px;
+}
+
+.aRow {
+  display: flex;
+  align-items: flex-start;
+  padding: 5px 0;
+}
+
+.leftSide {
+  display: inline-block;
+  text-align: right;
+  padding: 0 5px;
+  width: 40%;
+  margin-top: 0;
+}
+
+.rightSide {
+  display: inline-block;
+  text-align: left;
+  width: 55%;
+}
+
+textarea {
+  display: block;
+  overflow: scroll;
+  width: 400px;
+
+}
+
+#submit {
+  background-color: lightcyan;
+  max-width: 200px;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+#submitDiv {
+  text-align: center;
 }

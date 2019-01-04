@@ -12,40 +12,71 @@
 <body>
   <h1 id="title">Survey Form</h1>
   <form action="" id="survey-form">
-    <p id="description">Favorite Coding Websites:</p>
-    <label id="name-label" for="name">Name:</label>
-      <input required type="text" id="name" placeholder="First Last">
-    <label id="email-label" for="email">Email: </label><input required type="email" id="email" placeholder="email@domain.web">
-    <label id="number-label" for="number">Number of years since I wrote my very first line of code: <input type="number"
-        id="number" min="1" max="130" placeholder="1"></label>
-    <label for="dropdown">Years since starting first programming job:<select name="experience" id="dropdown">
+    <p id="description">We want to know your favorite coding websites!</p>
+    <div class="aRow">
+      <div class="leftSide">
+        <label id="name-label" for="name">Name:</label></div>
+      <div class="rightSide">
+        <input required type="text" id="name" placeholder="First Last"></div>
+    </div>
+    <div class="aRow">
+      <div class="leftSide">
+        <label id="email-label" for="email">Email: </label>
+      </div>
+      <input required type="email" id="email" placeholder="email@domain.web">
+    </div>
+    <div class="aRow">
+      <div class="leftSide">
+        <label id="number-label" for="number">Year began coding: </label>
+      </div>
+      <input type="number" id="number" max="2019" min="1920" placeholder="2015">
+    </div>
+    <div class="aRow">
+      <div class="leftSide">
+        <label for="dropdown">Years since got first programming job:</label>
+      </div>
+      <select name="experience" id="dropdown">
         <option value="lessthan1">less than 1</option>
         <option value="cat">1-2</option>
         <option value="fish">3-4</option>
         <option value="small mammal">4-6</option>
         <option value="bird">6-10</option>
         <option value="reptile">11+</option>
-      </select></label><br>
-    <label for="platform">I primarily work on:
-      <input type="radio" value="web" name="platform">Web Applications
-      <input type="radio" value="mobile" name="platform">Mobile Applications
-      <input type="radio" value="web and mobile" name="platform">both Web and Mobile
-      <input type="radio" value="other" name="platform">Other<br>
-    </label>
-    I use the following at least once a week:<br>
-    <label><input value="HTML" type="checkbox" name="weekly_skills"> HTML</label>
-    <label><input value="CSS" type="checkbox" name="weekly_skills"> CSS</label>
-    <label><input value="JavaScript" type="checkbox" name="weekly_skills"> Javascript</label>
-    <label><input value="Python" type="checkbox" name="weekly_skills"> Python</label>
-    <label><input value="SQL" type="checkbox" name="weekly_skills"> SQL</label>
-    <label><input value="MongoDB" type="checkbox" name="weekly_skills"> MongoDB</label>
+      </select>
+    </div>
+
+    <div class="aRow">
+      <div class="leftSide">
+        <label for="platform">I primarily work on: </label></div>
+      <div class="rightSide">
+        <input type="radio" value="web" name="platform">Web Apps
+        <input type="radio" value="mobile" name="platform">Mobile Apps
+        <input type="radio" value="web and mobile" name="platform">Web & Mobile
+        <input type="radio" value="other" name="platform">Other
+      </div>
+    </div>
+    <div class="aRow">
+      <div class="leftSide">
+        At least once a week I use:</div>
+      <div class="rightSide">
+        <label><input value="HTML" type="checkbox" name="weekly_skills">HTML</label>
+        <label><input value="CSS" type="checkbox" name="weekly_skills">CSS</label>
+        <label><input value="JavaScript" type="checkbox" name="weekly_skills">Javascript</label>
+        <label><input value="Python" type="checkbox" name="weekly_skills">Python</label>
+        <label><input value="SQL" type="checkbox" name="weekly_skills">SQL</label>
+        <label><input value="MongoDB" type="checkbox" name="weekly_skills">MongoDB</label>
+      </div>
+    </div>
+    <div class="aRow">
+      <div class="leftSide">
+        <label for="favorites">
+          Please list your favorite coding websites: </label></div>
+      <textarea name="favorites" id="favorites" min cols="30" rows="10"></textarea>
+    </div>
     <br>
-    <label for="textadvice">
-      Please list your favorite coding websites <br>
-      <textarea name="textadvice" id="textadvice" cols="80" rows="10"></textarea>
-    </label>
-    <br>
-    <button type="submit" id="submit">Submit</button>
+    <div id="submitDiv">
+      <button type="submit" id="submit">Submit</button>
+    </div>
   </form>
 </body>
 
